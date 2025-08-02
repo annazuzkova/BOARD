@@ -1,5 +1,7 @@
+import Comments from "./components/comments/Comments";
+
 function App() {
-  return <></>;
+  return <Comments />;
 }
 
 export default App;
