@@ -1,5 +1,5 @@
 import "./scss/global/_reset.scss";
-import "./scss/global/_common.scss";
+import "modern-normalize";
 
 function App() {
   return <></>;
