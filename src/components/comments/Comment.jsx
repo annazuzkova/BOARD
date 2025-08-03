@@ -1,10 +1,10 @@
-import scss from "../../scss/comment/comment.module.scss";
+import scss from "./Comment.module.scss";
 import Stars from "./Stars";
 
 const Comment = ({ comment }) => {
   return (
     <article className={scss.comment}>
-      <Stars stars={comment.stars} />
+      {/* <Stars stars={comment.stars} /> */}
       <p className={scss.comment__text}>{comment.comment}</p>
       <div className={scss.comment__user}>
         <div className={scss.comment__avatar}>

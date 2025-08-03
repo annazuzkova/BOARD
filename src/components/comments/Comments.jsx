@@ -1,4 +1,9 @@
-import scss from "../../scss/comment/comments.module.scss";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+
+import scss from "./Comments.module.scss";
 import commentsArray from "../../json/comments.json";
 import Comment from "./Comment";
 
@@ -6,13 +11,18 @@ const Comments = () => {
   return (
     <section className={scss.comments}>
       <div className={scss.comments__container}>
-        <ul className={scss.comments__list}>
+        <Swiper
+          slidesPerView={1}
+          spaceBetween={50}
+          pagination={{ clickable: true }}
+          modules={[Pagination]}
+        >
           {commentsArray.map((comment) => (
-            <li key={comment.id}>
+            <SwiperSlide key={comment.id}>
               <Comment comment={comment} />
-            </li>
+            </SwiperSlide>
           ))}
-        </ul>
+        </Swiper>
       </div>
     </section>
   );

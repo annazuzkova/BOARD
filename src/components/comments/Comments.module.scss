@@ -1,0 +1,20 @@
+:global(.swiper-pagination) {
+  display: flex;
+  align-items: center;
+}
+
+:global(.swiper-pagination-bullet) {
+  background: #fff;
+  width: 14px;
+  height: 14px;
+  opacity: 1;
+  margin: 0 6px;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+}
+
+:global(.swiper-pagination-bullet-active) {
+  width: 23px;
+  height: 23px;
+  background: #e22b2b;
+}

@@ -1,0 +1,11 @@
+.comment {
+  &__stars {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+  }
+  &__star {
+    width: 25px;
+    fill: #fff;
+  }
+}
