@@ -1,0 +1,140 @@
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: rgba(54, 39, 112, 0.902);
+  border-radius: 8px;
+  border: 1px solid #6f5099;
+  padding: 17px 15px 38px 15px;
+  color: #fff;
+  max-width: 332px;
+  &__photo {
+    height: 221px;
+    background-color: black;
+    width: 301px;
+    margin-bottom: 25px;
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 111%;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+  }
+  &__user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 22px;
+  }
+  &__avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: black;
+  }
+  &__userinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    font-weight: 500;
+    line-height: 111%;
+  }
+  &__name {
+    font-size: 17px;
+  }
+  &__workplace {
+    font-size: 9px;
+  }
+  &__button {
+    background: linear-gradient(
+      90deg,
+      #4b00e0,
+      #ff00d4
+    ); /* фіолетово-рожевий */
+    color: #fff;
+    text-transform: uppercase;
+    padding: 13px 0;
+    clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+    width: 100%;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 111%;
+  }
+}
+
+@media (min-width: 768px) {
+  .game {
+    padding: 16px 14px 35px 14px;
+    max-width: 306px;
+    &__photo {
+      height: 204px;
+      width: 278px;
+      margin-bottom: 23px;
+    }
+    &__title {
+      font-size: 18px;
+      margin-bottom: 14px;
+    }
+    &__user {
+      gap: 8px;
+      margin-bottom: 21px;
+    }
+    &__avatar {
+      width: 41px;
+      height: 41px;
+    }
+    &__userinfo {
+      gap: 6px;
+    }
+    &__name {
+      font-size: 13px;
+    }
+    &__workplace {
+      font-size: 7px;
+    }
+    &__button {
+      font-size: 13px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .game {
+    padding: 20px 18px 46px 18px;
+    max-width: 400px;
+    &__photo {
+      height: 265px;
+      width: 361px;
+      margin-bottom: 23px;
+    }
+    &__title {
+      font-size: 24px;
+      margin-bottom: 18px;
+    }
+    &__user {
+      gap: 10px;
+      margin-bottom: 26px;
+    }
+    &__avatar {
+      width: 43px;
+      height: 43px;
+    }
+    &__userinfo {
+      gap: 8px;
+    }
+    &__name {
+      font-size: 18px;
+    }
+    &__workplace {
+      font-size: 10px;
+    }
+    &__button {
+      font-size: 18px;
+      padding: 15px 0;
+    }
+  }
+}
