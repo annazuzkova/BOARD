@@ -18,3 +18,7 @@
   height: 23px;
   background: #e22b2b;
 }
+
+:global(.dot-hidden) {
+  display: none;
+}

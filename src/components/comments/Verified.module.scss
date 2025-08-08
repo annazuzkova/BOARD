@@ -1,0 +1,31 @@
+.comment {
+  &__verified {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+  }
+  &__check {
+    max-width: 18px;
+  }
+  &__status {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 111%;
+    letter-spacing: 0.04em;
+    color: #fff;
+  }
+}
+
+@media (min-width: 768px) {
+  .comment {
+    &__verified {
+      gap: 6px;
+    }
+    &__check {
+      max-width: 25px;
+    }
+    &__status {
+      font-size: 14px;
+    }
+  }
+}
