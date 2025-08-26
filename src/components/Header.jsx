@@ -9,6 +9,7 @@ function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [supportOpen, setSupportOpen] = useState(false);
   const [featuresOpen, setFeaturesOpen] = useState(false);
+  const [aboutOpen, setAboutOpen] = useState(false); 
   const [messages, setMessages] = useState([]);
 
   //  SUPPORT
@@ -21,12 +22,10 @@ function Header() {
   const [gameData, setGameData] = useState(null);
   const [loading, setLoading] = useState(false);
 
-   // AUTH
+  // AUTH
   const [signUpOpen, setSignUpOpen] = useState(false);
   const [logInOpen, setLogInOpen] = useState(false);
   const [user, setUser] = useState(null);
-
- 
 
   // SIGN UP
   const [regName, setRegName] = useState("");
@@ -36,7 +35,6 @@ function Header() {
   // LOG IN
   const [logEmail, setLogEmail] = useState("");
   const [logPassword, setLogPassword] = useState("");
-
 
   useEffect(() => {
     const saved = localStorage.getItem("supportMessages");
@@ -54,6 +52,7 @@ function Header() {
         setFeaturesOpen(false);
         setSignUpOpen(false);
         setLogInOpen(false);
+        setAboutOpen(false); 
       }
     };
     window.addEventListener("keydown", handleEsc);
@@ -72,6 +71,11 @@ function Header() {
     setFeaturesOpen(true);
   };
 
+  const openAbout = (e) => {
+    e.preventDefault();
+    setAboutOpen(true);
+  };
+
   const closeSupport = () => {
     setSupportOpen(false);
     setName("");
@@ -85,7 +89,11 @@ function Header() {
     setGameData(null);
   };
 
-   const closeSignUp = () => {
+  const closeAbout = () => {
+    setAboutOpen(false);
+  };
+
+  const closeSignUp = () => {
     setSignUpOpen(false);
     setRegName("");
     setRegEmail("");
@@ -149,7 +157,7 @@ function Header() {
     setLoading(false);
   };
 
-   // Sign Up
+  // Sign Up
   const handleRegister = (e) => {
     e.preventDefault();
     if (!regName.trim() || !regEmail.trim() || !regPassword.trim()) return;
@@ -179,8 +187,6 @@ function Header() {
     }
   };
 
-
-
   return (
     <>
       <header className="header">
@@ -190,14 +196,25 @@ function Header() {
         </div>
 
         <nav className={`nav ${menuOpen ? "nav-open" : ""}`}>
-          <a href="#product">PRODUCTS</a>
-          <a href="#app">APPS & GAMES</a>
+         <a href="#product" onClick={(e) => {
+          e.preventDefault();
+          document.getElementById("games-section")?.scrollIntoView({ behavior: "smooth" });
+        }}>
+          PRODUCTS
+        </a>
+
+        <a href="#app" onClick={(e) => {
+          e.preventDefault();
+          document.getElementById("games-section")?.scrollIntoView({ behavior: "smooth" });
+        }}>
+          APPS & GAMES
+        </a>
           <a href="#features" onClick={openFeatures}>FEATURES</a>
           <a href="#support" onClick={openSupport}>SUPPORT</a>
-          <a href="#about">ABOUT</a>
+          <a href="#about" onClick={openAbout}>ABOUT</a>
         </nav>
 
-         <div className="lock-icon">
+        <div className="lock-icon">
           {user ? (
             <span className="user-name">👤 {user}</span>
           ) : (
@@ -219,6 +236,34 @@ function Header() {
           <span className={`bar ${menuOpen ? "open" : ""}`}></span>
         </div>
       </header>
+
+       {/* 🔹 MODAL ABOUT */}
+      {aboutOpen && (
+        <div
+          className="support-overlay"
+          onClick={closeAbout}
+        >
+          <div
+            className="support-modal"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              className="support-close"
+              onClick={closeAbout}
+              aria-label="Close"
+            >
+              ✕
+            </button>
+            <h2>About This Site</h2>
+            <p>⋆.˚⋆ ˚｡⋆୨୧˚⋆𖦹.✧⋆˚⋅ ˚✮</p>
+            <p>
+              Welcome to our awesome gaming site! 🎮 Here you can explore cool
+              projects, interactive 3D models, and experience the future of
+              browser games in one place. Let’s play and have fun together!
+            </p>
+          </div>
+        </div>
+      )}
 
        {/* Sign Up */}
       {signUpOpen && (

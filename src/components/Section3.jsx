@@ -1,9 +1,11 @@
 import React from "react";
+import { useState } from "react";
 import img from "./img/imgSection3.png"
 import "../App.css"
 
 
 function Section3 () {
+     const [isModalOpen, setIsModalOpen] = useState(false);
     return (
         <section className="section3">
             <div className="section3-content">
@@ -23,7 +25,12 @@ function Section3 () {
         </p>
 
         <div className="section1-buttons">
-          <button className="btn-play"><span>PLAY NOW</span></button>
+           <button 
+            className="btn-play" 
+            onClick={() => setIsModalOpen(true)}
+          >
+            <span>PLAY NOW</span>
+          </button>
           </div>
           </div>
             </div>
@@ -35,6 +42,23 @@ function Section3 () {
        <span className="glow">GAMING SPANING ✦ ACTION - PACKED ✦ MIND - BENDING ✦ COLLECTION OG GAMES ✦</span>
     </div>
   </div>
+
+   {/* MODAL */}
+      {isModalOpen && (
+        <div className="support-overlay" onClick={() => setIsModalOpen(false)}>
+          <div className="support-modal" onClick={(e) => e.stopPropagation()}>
+            <button 
+              className="support-close" 
+              onClick={() => setIsModalOpen(false)}
+            >
+              ✕
+            </button>
+            <p style={{ textAlign: "center", fontSize: "18px" }}>
+             Sorry, this is not working right now. :/
+            </p>
+          </div>
+        </div>
+      )}
         </section>
     )
 }

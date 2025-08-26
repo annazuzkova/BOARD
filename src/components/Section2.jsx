@@ -9,6 +9,7 @@ import "../App.css";
 
 
 function Section2() {
+     const [isModalOpen, setIsModalOpen] = useState(false);
   const [index, setIndex] = useState(0);
   const images = [img1, img2, img3, img4, img5, img6];
 
@@ -58,8 +59,30 @@ function Section2() {
 
        <div className="section2-buttons">
           <button className="btn-buy"><span>VIEW ALL</span></button>
-          <button className="btn-play"><span>PLAY NOW</span></button>
+           <button 
+            className="btn-play" 
+            onClick={() => setIsModalOpen(true)}
+          >
+            <span>PLAY NOW</span>
+          </button>
         </div>
+
+         {/* MODAL */}
+      {isModalOpen && (
+        <div className="support-overlay" onClick={() => setIsModalOpen(false)}>
+          <div className="support-modal" onClick={(e) => e.stopPropagation()}>
+            <button 
+              className="support-close" 
+              onClick={() => setIsModalOpen(false)}
+            >
+              ✕
+            </button>
+            <p style={{ textAlign: "center", fontSize: "18px" }}>
+             Sorry, this is not working right now. :/
+            </p>
+          </div>
+        </div>
+      )}
     </section>
   );
 }
