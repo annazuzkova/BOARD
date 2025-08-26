@@ -1,0 +1,100 @@
+body{
+  background-color: #2D1E6B;
+}
+.games {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &__button{
+    display: flex;
+    justify-content: center;
+    font-weight: 800;
+font-size: 24px;
+color: #fff;
+width: 264px;
+  transform: skewX(-14deg);
+     background: linear-gradient(
+      90deg,
+      #4b00e0,
+      #ff00d4
+    ); 
+    padding: 18px 0;
+    & span{
+  display: inline-block;
+  transform: skewX(14deg);
+    }
+  }
+  &__title{
+    font-weight: 700;
+font-size: 34px;
+text-transform: uppercase;
+text-align: center;
+color: #fff;
+max-width: 400px;
+  }
+  &__titlespan{
+    display: inline;
+    background: linear-gradient(
+    90deg,
+    #5f3ee8 17.79%,
+    #d074ff 47.56%,
+    #ff22ed 100%
+  );
+
+  background-clip: text; /* для Firefox */
+  -webkit-background-clip: text; /* для Safari / Chrome */
+  -webkit-text-fill-color: transparent; /* робимо літери прозорими */
+  color: transparent; /* fallback */
+
+  }
+}
+
+@media (min-width: 768px) {
+  .games {
+      &__container {
+     gap: 30px;}
+    &__list {
+      gap: 30px;
+    }
+      &__button{
+font-size: 20px;
+width: 259px;
+    padding: 17px 0;
+  }
+    &__title{
+    font-size: 32px;
+  max-width: 435px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .games {
+    //       &__container {
+    // //  gap: 40px;}
+    &__list {
+      gap: 25px;
+    }
+    &__button{
+font-size: 32px;
+width: 398px;
+    padding: 27px 0;
+  }
+  &__title{
+    font-weight: 800;
+font-size: 66px;
+  max-width: 718px;
+  }
+  }
+  }
+}

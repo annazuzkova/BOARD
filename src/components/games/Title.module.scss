@@ -1,0 +1,47 @@
+.game__title {
+  display: inline-block;
+  overflow: hidden;           // ОБОВ’ЯЗКОВО для text-overflow
+  white-space: nowrap;        // щоб не переносився
+  text-overflow: ellipsis;    // обрізання з ...
+  transform: translateX(0);
+  transition: transform var(--duration, 3s) linear;
+  will-change: transform;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 111%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+/* активується при наведенні, якщо є is-overflow */
+:global(.is-overflow:hover) .game__title {
+  overflow: visible;          // даємо показати весь текст
+  text-overflow: clip;        // прибираємо ...
+  transform: translateX(calc(-1 * var(--overflow, 0px)));
+}
+
+/* врахування reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .game__title {
+    transition: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .game {
+    margin-bottom: 14px;
+    &__title {
+      font-size: 18px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .game {
+    margin-bottom: 18px;
+    &__title {
+      font-size: 24px;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.games__input{
+font-weight: 500;
+font-size: 15px;
+color: #fff;
+border-radius: 66px;
+max-width: 370px;
+width: 100%;
+height: 46px;
+padding-inline: 33px;
+display: flex;
+align-items: center;
+justify-content: center;
+border: 1px solid transparent; /* робимо прозорий бордер */
+  background: 
+    linear-gradient(#2D1E6B, #2D1E6B) padding-box, 
+    linear-gradient(90deg, #5f3ee8, #ff22ed) border-box;
+border-image-slice: 1; /* обов'язково */
+}
+
+.games__input::placeholder{
+    font-weight: 500;
+font-size: 15px;
+color: #fff;
+}
+
+
+@media(min-width: 768px){
+  .games__input{
+font-size: 19px;
+border-radius: 66px;
+max-width: 470px;
+height: 58px;
+padding-inline: 43px;
+}
+
+.games__input::placeholder{
+font-size: 19px;
+}
+}
+
+@media(min-width: 1200px){
+  .games__input{
+font-size: 26px;
+border-radius: 66px;
+max-width: 611px;
+height: 76px;
+padding-inline: 55px;
+}
+
+.games__input::placeholder{
+font-size: 26px;
+}
+}

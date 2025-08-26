@@ -9,10 +9,18 @@
   color: #fff;
   max-width: 332px;
   &__photo {
-    height: 221px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 361/265;
+    width: 100%;
     background-color: black;
-    width: 301px;
     margin-bottom: 25px;
+    overflow: hidden;
+  }
+  &__img{
+    height: 100%;
+    object-fit: contain;
   }
   &__title {
     font-weight: 500;

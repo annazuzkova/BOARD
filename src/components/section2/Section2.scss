@@ -1,0 +1,169 @@
+
+.section2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.section2-text {
+   text-align: center;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.section2 p {
+  font-size: 16px;
+}
+
+.section2-buttons {
+  display: flex;
+  margin: 40px;
+  gap: 20px;
+}
+
+/* слайдер */
+.slider-fullscreen {
+  position: relative;
+  overflow: hidden;
+  height: 400px;
+  margin-top: 40px;
+}
+
+.slider-track {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 40px;
+  transform: translateX(0);
+  pointer-events: none;
+}
+
+.slide-img {
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s ease, opacity 0.8s ease, box-shadow 0.4s ease, border 0.3s ease;
+  pointer-events: auto;
+  border: 4px solid transparent; 
+  box-sizing: border-box; 
+}
+
+.slide-img:hover {
+  border: 4px solid #a020f0;
+  box-shadow: 0 0 25px #a020f0;
+}
+
+.slide-img.small {
+  width: 300px;
+  opacity: 0.6;
+  transform: scale(0.9);
+}
+
+.slide-img.active {
+  width: 500px;
+  opacity: 1;
+  transform: scale(1);
+  z-index: 2;
+}
+
+.side-zone {
+  position: absolute;
+  top: 0;
+  width: 20%;
+  height: 100%;
+  z-index: 5;
+  cursor: pointer;
+}
+
+.left-zone {
+  left: 0;
+}
+
+.right-zone {
+  right: 0;
+}
+
+
+@media (max-width: 1200px) {
+  .section2 .main-title {
+    font-size: 40px;
+  }
+
+  .slider-fullscreen {
+    height: 360px;
+  }
+
+  .slide-img.small {
+    width: 250px;
+  }
+
+  .slide-img.active {
+    width: 400px;
+  }
+
+ 
+}
+
+@media (max-width: 768px) {
+  .section2 .main-title {
+    font-size: 32px;
+  }
+
+  .section2 p {
+    font-size: 14px;
+  }
+
+  .slider-fullscreen {
+    height: 300px;
+  }
+
+  .slide-img.small {
+    width: 200px;
+  }
+
+  .slide-img.active {
+    width: 320px;
+  }
+
+  
+}
+
+@media (max-width: 480px) {
+  .section2 .main-title {
+    font-size: 26px;
+  }
+
+  .section2 p {
+  margin-left: 30px;
+}
+
+  .slider-fullscreen {
+    height: 220px;
+  }
+
+  .slide-img.small {
+    width: 140px;
+  }
+
+  .slide-img.active {
+    width: 240px;
+  }
+
+  .section2-buttons {
+    
+    margin: 30px 0;
+  }
+
+
+
+  .side-zone {
+    width: 15%;
+  }
+}
