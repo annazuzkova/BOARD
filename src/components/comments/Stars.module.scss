@@ -1,0 +1,26 @@
+.comment {
+  &__stars {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 18px;
+  }
+  &__star {
+    width: 23px;
+    height: 23px;
+    fill: #fff;
+  }
+  &__notstar {
+    width: 23px;
+    height: 23px;
+    fill: #bababa;
+  }
+}
+
+@media (min-width: 768px) {
+  .comment {
+    &__stars {
+      margin-bottom: 5px;
+    }
+  }
+}

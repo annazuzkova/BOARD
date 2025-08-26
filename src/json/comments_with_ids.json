@@ -4,6 +4,7 @@
     "avatar": "https://randomuser.me/api/portraits/men/1.jpg",
     "comment": "One of the standout features of this gaming website is its extensive library of game guides and tutorials. It has helped me level up my skills, conquer challenging quests, and discover hidden secrets within games. The guides are comprehensive, easy to follow, and have undoubtedly elevated my gaming performance.",
     "stars": 5,
+    "verified": true,
     "id": "juqpbv"
   },
   {
@@ -11,6 +12,7 @@
     "avatar": "https://randomuser.me/api/portraits/women/2.jpg",
     "comment": "Absolutely love the game reviews on this site. They are honest, in-depth, and incredibly useful before making any purchase decisions.",
     "stars": 5,
+    "verified": true,
     "id": "wzu"
   },
   {
@@ -18,6 +20,7 @@
     "avatar": "https://randomuser.me/api/portraits/men/3.jpg",
     "comment": "The retro game section is a treasure trove! It brings back so many memories, and I\u2019ve even discovered classics I missed back in the day.",
     "stars": 4,
+    "verified": true,
     "id": "akewwi"
   },
   {
@@ -25,6 +28,7 @@
     "avatar": "https://randomuser.me/api/portraits/women/4.jpg",
     "comment": "The layout and design of this gaming website are sleek and intuitive. It\u2019s easy to navigate and find what I\u2019m looking for.",
     "stars": 5,
+    "verified": true,
     "id": "tvi"
   },
   {
@@ -32,6 +36,7 @@
     "avatar": "https://randomuser.me/api/portraits/men/5.jpg",
     "comment": "Amazing selection of game walkthroughs and pro tips. Helped me finish a really tough level I was stuck on for weeks!",
     "stars": 5,
+    "verified": true,
     "id": "1xngl"
   },
   {
@@ -39,6 +44,7 @@
     "avatar": "https://randomuser.me/api/portraits/women/6.jpg",
     "comment": "I keep coming back to this site because of the community. The forums are active, helpful, and full of friendly gamers.",
     "stars": 4,
+    "verified": false,
     "id": "l2y8to"
   },
   {
@@ -46,6 +52,7 @@
     "avatar": "https://randomuser.me/api/portraits/men/7.jpg",
     "comment": "I appreciate the frequent updates. The news section keeps me informed about upcoming releases and game patches.",
     "stars": 5,
+    "verified": true,
     "id": "zvvni"
   },
   {
@@ -53,6 +60,7 @@
     "avatar": "https://randomuser.me/api/portraits/men/8.jpg",
     "comment": "The achievement guides are golden. I\u2019ve 100% completed several games thanks to the step-by-step help!",
     "stars": 5,
+    "verified": true,
     "id": "7z44v"
   },
   {
@@ -60,6 +68,7 @@
     "avatar": "https://randomuser.me/api/portraits/women/9.jpg",
     "comment": "Great spotlight on indie games. This site helped me discover some hidden gems I never would have found on my own.",
     "stars": 5,
+    "verified": true,
     "id": "2zai"
   },
   {
@@ -67,6 +76,7 @@
     "avatar": "https://randomuser.me/api/portraits/men/10.jpg",
     "comment": "From RPGs to FPS titles, the variety of game content here is unmatched. A must-visit for every gamer.",
     "stars": 5,
+    "verified": false,
     "id": "opwf63"
   },
   {
@@ -74,6 +84,7 @@
     "avatar": "https://randomuser.me/api/portraits/women/11.jpg",
     "comment": "Found awesome speedrunning tips and challenges here. Love that the community supports each other\u2019s goals.",
     "stars": 4,
+    "verified": true,
     "id": "3983"
   },
   {
@@ -81,6 +92,7 @@
     "avatar": "https://randomuser.me/api/portraits/men/12.jpg",
     "comment": "Timely patch notes and breakdowns. Makes understanding game updates a breeze.",
     "stars": 5,
+    "verified": true,
     "id": "gm0k"
   },
   {
@@ -88,6 +100,7 @@
     "avatar": "https://randomuser.me/api/portraits/men/13.jpg",
     "comment": "Solid editorial content. The opinion pieces are thoughtful and reflect a deep understanding of gaming culture.",
     "stars": 5,
+    "verified": false,
     "id": "8pt6s6"
   },
   {
@@ -95,6 +108,7 @@
     "avatar": "https://randomuser.me/api/portraits/women/14.jpg",
     "comment": "Their adventure game recommendations never miss. Every title I\u2019ve tried has been a blast!",
     "stars": 4,
+    "verified": true,
     "id": "nral"
   },
   {
@@ -102,6 +116,7 @@
     "avatar": "https://randomuser.me/api/portraits/men/15.jpg",
     "comment": "Finally a gaming site that doesn't shove ads down your throat. Clean, fast, and focused on content.",
     "stars": 5,
+    "verified": true,
     "id": "53d"
   },
   {
@@ -109,6 +124,7 @@
     "avatar": "https://randomuser.me/api/portraits/men/16.jpg",
     "comment": "Top-notch coverage of competitive shooters. Love the guides and strategy breakdowns.",
     "stars": 5,
+    "verified": false,
     "id": "k8c7"
   },
   {
@@ -116,6 +132,7 @@
     "avatar": "https://randomuser.me/api/portraits/women/17.jpg",
     "comment": "Great Minecraft content and mod showcases. My kids and I learned a lot from this site!",
     "stars": 5,
+    "verified": true,
     "id": "5qx62"
   },
   {
@@ -123,6 +140,7 @@
     "avatar": "https://randomuser.me/api/portraits/men/18.jpg",
     "comment": "The sim game reviews and guides are very detailed and helpful. Appreciate the effort!",
     "stars": 4,
+    "verified": true,
     "id": "ltj"
   },
   {
@@ -130,6 +148,7 @@
     "avatar": "https://randomuser.me/api/portraits/women/19.jpg",
     "comment": "Love the VR section! Got great gear recommendations and game reviews here.",
     "stars": 5,
+    "verified": false,
     "id": "c29l9"
   },
   {
@@ -137,6 +156,7 @@
     "avatar": "https://randomuser.me/api/portraits/men/20.jpg",
     "comment": "This website helped me build my first gaming rig. The PC building guides are superb!",
     "stars": 5,
+    "verified": true,
     "id": "7yvsdy"
   },
   {
@@ -144,6 +164,7 @@
     "avatar": "https://randomuser.me/api/portraits/men/21.jpg",
     "comment": "Fantastic source for discovering up-and-coming indie developers and their work.",
     "stars": 5,
+    "verified": true,
     "id": "6fr6b"
   },
   {
@@ -151,6 +172,7 @@
     "avatar": "https://randomuser.me/api/portraits/women/22.jpg",
     "comment": "Great mix of reviews, opinion pieces, and guides. The writing style is engaging and informative.",
     "stars": 5,
+    "verified": false,
     "id": "sgw"
   },
   {
@@ -158,6 +180,7 @@
     "avatar": "https://randomuser.me/api/portraits/men/23.jpg",
     "comment": "Solid tactical game strategies. I\u2019ve upped my game thanks to their breakdowns.",
     "stars": 4,
+    "verified": true,
     "id": "abjc"
   },
   {
@@ -165,6 +188,7 @@
     "avatar": "https://randomuser.me/api/portraits/women/24.jpg",
     "comment": "Excellent mobile game suggestions and reviews. Helped me find new favorites!",
     "stars": 5,
+    "verified": true,
     "id": "33uu2k"
   },
   {
@@ -172,6 +196,7 @@
     "avatar": "https://randomuser.me/api/portraits/men/25.jpg",
     "comment": "This site made grinding fun. With so many tips and tricks, I level up way faster now.",
     "stars": 5,
+    "verified": true,
     "id": "1wz6"
   }
 ]
