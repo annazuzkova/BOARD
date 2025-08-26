@@ -1,45 +1,24 @@
-import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
+import { Navigation } from "swiper/modules";
 import "swiper/css";
-import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 import scss from "./Comments.module.scss";
 import commentsArray from "../../json/comments.json";
 import Comment from "./Comment";
 
 const Comments = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const visibleDots = 5; // кількість видимих крапочок
-
   return (
     <section className={scss.comments}>
       <div className={scss.comments__container}>
         <Swiper
-          slidesPerView={1}
-          spaceBetween={50}
-          onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
-          pagination={{
-            clickable: true,
-            renderBullet: (index, className) => {
-              // Межі видимих точок
-              let half = Math.floor(visibleDots / 2);
-              let start = Math.max(
-                Math.min(
-                  activeIndex - half,
-                  commentsArray.length - visibleDots
-                ),
-                0
-              );
-              let end = start + visibleDots - 1;
-
-              // Додаємо клас hidden, якщо точка поза вікном
-              let extraClass = index < start || index > end ? "dot-hidden" : "";
-
-              return `<span class="${className} ${extraClass}"></span>`;
-            },
+          slidesPerView={2}
+          spaceBetween={30}
+          navigation={{
+            nextEl: `.${scss.nextBtn}`,
+            prevEl: `.${scss.prevBtn}`,
           }}
-          modules={[Pagination]}
+          modules={[Navigation]}
         >
           {commentsArray.map((comment) => (
             <SwiperSlide key={comment.id}>
@@ -47,6 +26,10 @@ const Comments = () => {
             </SwiperSlide>
           ))}
         </Swiper>
+
+        {/* Кнопки навігації */}
+        <button className={scss.prevBtn}>❮</button>
+        <button className={scss.nextBtn}>❯</button>
       </div>
     </section>
   );
